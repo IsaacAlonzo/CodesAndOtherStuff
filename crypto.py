@@ -9,9 +9,9 @@ def scramble2Encrypt(plaintext):
     charCount = 0
     for ch in plaintext:
         if charCount % 2 == 0:
-            evenChars = evenChars+ ch
+            evenChars = evenChars + ch
         else:
-            oddChars = oddChars = ch
+            oddChars = oddChars + ch
         charCount = charCount + 1
-    cipherText =  oddChars + evenChars
+    cipherText = oddChars + evenChars
     return cipherText
