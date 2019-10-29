@@ -94,7 +94,8 @@ print(name.rindex("Cena"))
 print(name.find('John'))
 print(name.find("Cena"))
 # rfind         aStr.rfind(item)    also finds the character(s) you want and returns location
-print(name.rfind('ena'))
+print(name.rfind('e'
+                 'na'))
 print(name.rfind("W."))
 # replace       aStr.replace(old, new)
 x = name.replace("Cena", "Stamos")
