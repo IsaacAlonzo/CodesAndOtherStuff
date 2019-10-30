@@ -47,4 +47,7 @@ print(stripSpaces("Hello my name is John"))
 def caeserEncrypt(plainText, shift):
     result = ""
     for i in range(len(plainText)):
+        char = plainText[i]
+        if (char.isupper()):
+            result += chr(ord(char))
 # write a caesarDecrypt(cipherText, shift)
