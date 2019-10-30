@@ -35,3 +35,15 @@ def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scramble2Encrypt(msg)
     print("The message is:", cipherText)
+
+# write a stripSpaces(text) function here
+
+def stripSpaces(text):
+
+
+
+
+
+
+# write a caesarEncrypt(plainText, shift)
+# write a caesarDecrypt(cipherText, shift)
