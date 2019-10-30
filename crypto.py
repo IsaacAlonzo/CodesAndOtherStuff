@@ -39,11 +39,12 @@ def encryptMessage():
 # write a stripSpaces(text) function here
 
 def stripSpaces(text):
-
-
-
-
+    print(text.replace(" ", ""))
+print(stripSpaces("Hello my name is John"))
 
 
 # write a caesarEncrypt(plainText, shift)
+def caeserEncrypt(plainText, shift):
+    result = ""
+    for i in range(len(plainText)):
 # write a caesarDecrypt(cipherText, shift)
