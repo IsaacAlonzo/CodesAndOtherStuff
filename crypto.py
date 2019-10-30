@@ -34,4 +34,4 @@ def scramble2Decrypt(ciphertext):
 def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scramble2Encrypt(msg)
-    return msg
+    print("The message is:", cipherText)
