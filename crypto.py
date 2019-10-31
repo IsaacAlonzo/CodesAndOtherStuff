@@ -51,7 +51,15 @@ def caesarEncrypt(plainText, shift):
         if (char.isupper()):
             result += chr((ord(char) + shift - 65) % 26 + 65)
         else:
-            result += chr((ord(char) + shift - 97) % 26+ 97)
+            result += chr((ord(char) + shift - 97) % 26 + 97)
+        return result
+
+plainText = "Hello"
+shift = 4
+
+print("Text: " + plainText)
+print("Shift pattern: " + str(shift))
+print("Cipher: " + caesarEncrypt(plainText, shift))
 
 # write a caesarDecrypt(cipherText, shift)
 
