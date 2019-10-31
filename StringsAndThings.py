@@ -126,3 +126,6 @@ print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 
 print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
 
+print(caesarEncrypt("Hello", 2))
+
+print(caesarDecrypt("Jgnnq", 2))

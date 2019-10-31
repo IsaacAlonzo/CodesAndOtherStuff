@@ -44,23 +44,26 @@ print(stripSpaces("Hello my name is John"))
 
 
 # write a caesarEncrypt(plainText, shift)
+Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+Lower = "abcdefghijklmnopqrstuvwxyz "
+
 def caesarEncrypt(plainText, shift):
-    result = ""
-    for i in range(len(plainText)):
-        char = plainText[i]
-        if (char.isupper()):
-            result += chr((ord(char) + shift - 65) % 26 + 65)
+    cipherText = ""
+    for ch in plainText:
+        if ch in Upper:
+            index = Upper.find(ch)
+            nextIndex = (index + shift) % 27
+            cipherText += Upper[nextIndex]
         else:
-            result += chr((ord(char) + shift - 97) % 26 + 97)
-        return result
+            index = Lower.find(ch)
+            nextIndex = (index + shift) % 27
+            cipherText += Lower[nextIndex]
+    return cipherText
 
-plainText = "Hello"
-shift = 4
+print(caesarEncrypt("Hello", 2))
 
-print("Text: " + plainText)
-print("Shift pattern: " + str(shift))
-print("Cipher: " + caesarEncrypt(plainText, shift))
 
 # write a caesarDecrypt(cipherText, shift)
 
 
+print(caesarDecrypt("Jgnnq", 2))
