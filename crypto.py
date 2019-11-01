@@ -73,7 +73,13 @@ def caesarDecrypt(plainText, shift):
             if nextIndex < 0:
                 nextIndex = 27 + nextIndex
             cipherText += Upper[nextIndex]
-
+        else:
+            index = Lower.index(ch)
+            nextIndex = (index - shift)
+            if nextIndex < 0:
+                nextIndex = 27 + nextIndex
+                cipherText += Lower[nextIndex]
+        return cipherText
 
 
 
