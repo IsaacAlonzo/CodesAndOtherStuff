@@ -66,6 +66,15 @@ print(caesarEncrypt("Hello", 2))
 # write a caesarDecrypt(cipherText, shift)
 def caesarDecrypt(plainText, shift):
     cipherText = ""
+    for ch in plainText:
+        if ch in Upper:
+            index = Upper.find(ch)
+            nextIndex = (index - shift)
+            if nextIndex < 0:
+                nextIndex = 27 + nextIndex
+            cipherText += Upper[nextIndex]
+
+
 
 
 
