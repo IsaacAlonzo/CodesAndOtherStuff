@@ -60,7 +60,6 @@ def caesarEncrypt(plainText, shift):
             cipherText += Lower[nextIndex]
     return cipherText
 
-print(caesarEncrypt("Hello", 2))
 
 
 # write a caesarDecrypt(cipherText, shift)
